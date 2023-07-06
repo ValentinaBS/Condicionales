@@ -1,9 +1,9 @@
 // 1
 function esMayor(num1, num2) {
     if(num1 > num2) {
-        return console.log("El primero es mayor que el segundo")
+        console.log("El primero es mayor que el segundo")
     } else {
-        return console.log("El segundo es mayor o igual que el primero")
+        console.log("El segundo es mayor o igual que el primero")
     }
 }
 //esMayor(10, 6)
@@ -12,9 +12,9 @@ function esMayor(num1, num2) {
 // 2
 function sonIguales(num1, num2) {
     if(num1 === num2) {
-        return console.log("Los numeros son iguales")
+        console.log("Los numeros son iguales")
     } else {
-        return console.log("Los numeros son distintos")
+        console.log("Los numeros son distintos")
     }
 }
 //sonIguales(1, 1)
@@ -23,11 +23,11 @@ function sonIguales(num1, num2) {
 // 3
 function sonIgualesOMasGrandes(num1, num2) {
     if(num1 === num2) {
-        return console.log("Son iguales")
+        console.log("Son iguales")
     } else if(num1 > num2) {
-        return console.log(`${num1} es más grande`)
+        console.log(`${num1} es más grande`)
     } else {
-        return console.log(`${num2} es más grande`)
+        console.log(`${num2} es más grande`)
     }
 }
 //sonIgualesOMasGrandes(1, 1)
@@ -37,11 +37,11 @@ function sonIgualesOMasGrandes(num1, num2) {
 // 4
 function esElMasChico(num1, num2, num3) {
     if(num1 < num2 && num1 < num3) {
-        return console.log("El más chico es: " + num1)
+        console.log("El más chico es: " + num1)
     } else if(num2 < num1 && num2 < num3) {
-        return console.log("El más chico es: " + num2)
+        console.log("El más chico es: " + num2)
     } else {
-        return console.log("El más chico es: " + num3)
+        console.log("El más chico es: " + num3)
     }
 }
 //esElMasChico(1, 2, 3)
@@ -84,9 +84,9 @@ function mejorPersona(persona1, persona2) {
 
 function puedeConducir(nombre, edad, altura, vision) {
     if(edad >= 18 && altura > 150 && vision >= 8) {
-        return console.log(`${nombre} está capacitado/a para manejar`)
+        console.log(`${nombre} está capacitado/a para manejar`)
     } else {
-        return console.log(`${nombre} no está capacitado/a para manejar`)
+        console.log(`${nombre} no está capacitado/a para manejar`)
     }
 }
 //puedeConducir(nombreIngresado, edadIngresada, alturaIngresada, visionIngresada)
@@ -98,23 +98,23 @@ function puedeConducir(nombre, edad, altura, vision) {
 
 function entradaPermitida(nombre, pase, poseeEntrada) {
     if(nombre === "Valentina" || pase === "vip") {
-        return console.log("Bienvenido/a")
+        console.log("Bienvenido/a")
     } else if(poseeEntrada === "si") {
         let respuesta = prompt("¿Desea utilizar su entrada? Responda con 'si' o 'no'")
         if(respuesta === "si") {
-            return console.log("Bienvenido/a")
+            console.log("Bienvenido/a")
         }
     } else {
         let respuesta = prompt("¿Desea comprar una entrada? Responda con 'si' o 'no'")
         if(respuesta === "si") {
             let dineroDisponible = Number(prompt("Ingrese su dinero disponible"))
             if(dineroDisponible >= 1000) {
-                return console.log("Compra de entrada exitosa, bienvenido/a")
+                console.log("Compra de entrada exitosa, bienvenido/a")
             } else {
-                return console.log("Fondos insuficientes")
+                console.log("Fondos insuficientes")
             }
         } else {
-            return console.log("Hasta luego")
+            console.log("Hasta luego")
         }
     }
 }
@@ -127,30 +127,30 @@ function adivinanza() {
     let numeroIncognita = 4;
 
     if(numeroIngresado1 === numeroIncognita) {
-        return console.log("Ganaste, has adivinado el número")
+        console.log("Ganaste, has adivinado el número")
     } else if(numeroIngresado1 > numeroIncognita) {
         console.log("El número ingresado es mayor, vuelve a intentarlo")
         let numeroIngresado2 = Number(prompt("Ingresa un número del 1 al 10"));
 
         if(numeroIngresado2 === numeroIncognita) {
-            return console.log("Ganaste, has adivinado el número")
+            console.log("Ganaste, has adivinado el número")
         } else if(numeroIngresado2 > numeroIncognita) {
             console.log("El número ingresado es mayor, vuelve a intentarlo")
             let numeroIngresado3 = Number(prompt("Ingresa un número del 1 al 10"));
 
             if(numeroIngresado3 === numeroIncognita) {
-                return console.log("Ganaste, has adivinado el número")
+                console.log("Ganaste, has adivinado el número")
             } else {
-                return console.log("Has perdido")
+                console.log("Has perdido")
             }
         } else if(numeroIngresado2 < numeroIncognita){
             console.log("El número ingresado es menor, vuelve a intentarlo")
             let numeroIngresado3 = Number(prompt("Ingresa un número del 1 al 10"));
 
             if(numeroIngresado3 === numeroIncognita) {
-                return console.log("Ganaste, has adivinado el número")
+                console.log("Ganaste, has adivinado el número")
             } else {
-                return console.log("Has perdido")
+                console.log("Has perdido")
             }
         }
     } else {
@@ -158,24 +158,24 @@ function adivinanza() {
         let numeroIngresado2 = Number(prompt("Ingresa un número del 1 al 10"));
 
         if(numeroIngresado2 === numeroIncognita) {
-            return console.log("Ganaste, has adivinado el número")
+            console.log("Ganaste, has adivinado el número")
         } else if(numeroIngresado2 > numeroIncognita) {
             console.log("El número ingresado es mayor, vuelve a intentarlo")
             let numeroIngresado3 = Number(prompt("Ingresa un número del 1 al 10"));
 
             if(numeroIngresado3 === numeroIncognita) {
-                return console.log("Ganaste, has adivinado el número")
+                console.log("Ganaste, has adivinado el número")
             } else {
-                return console.log("Has perdido")
+                console.log("Has perdido")
             }
         } else if(numeroIngresado2 < numeroIncognita){
             console.log("El número ingresado es menor, vuelve a intentarlo")
             let numeroIngresado3 = Number(prompt("Ingresa un número del 1 al 10"));
 
             if(numeroIngresado3 === numeroIncognita) {
-                return console.log("Ganaste, has adivinado el número")
+                console.log("Ganaste, has adivinado el número")
             } else {
-                return console.log("Has perdido")
+                console.log("Has perdido")
             }
         }
     }
@@ -187,43 +187,35 @@ function adivinanza() {
 
 function rangoEtario() {
     if(edad >= 0 && edad <= 12) {
-        return console.log("Eres un infante")
+        console.log("Eres un infante")
     } else if(edad >= 13 && edad <= 18) {
-        return console.log("Eres un adolescente")
+        console.log("Eres un adolescente")
     } else if(edad >= 19 && edad <= 45) {
-        return console.log("Eres un mayor jóven")
+        console.log("Eres un mayor jóven")
     } else if(edad >= 46 && edad <= 99) {
-        return console.log("Eres un anciano")
+        console.log("Eres un anciano")
     } else {
-        return console.log("¿De verdad tienes esa edad?")
+        console.log("¿De verdad tienes esa edad?")
     }
 }
 //rangoEtario()
 
 // 10
-//let jugada1 = prompt("Ingresa PIEDRA, PAPEL o TIJERAS");
-//let jugada2 = prompt("Ingresa PIEDRA, PAPEL o TIJERAS");
+let jugada1 = prompt("Ingresa PIEDRA, PAPEL o TIJERAS");
+let jugada2 = prompt("Ingresa PIEDRA, PAPEL o TIJERAS");
 
 function piedraPapelTijeras() {
     if(jugada1 === jugada2) {
-        return console.log("Empate")
-    } else if(jugada1 === "PIEDRA" && jugada2 === "PAPEL") {
-        return console.log("Jugador 2 ha ganado")
-    } else if(jugada1 === "PIEDRA" && jugada2 === "TIJERA") {
-        return console.log("Jugador 1 ha ganado")
-    } else if(jugada1 === "PAPEL" && jugada2 === "TIJERA") {
-        return console.log("Jugador 2 ha ganado")
-    } else if(jugada1 === "PAPEL" && jugada2 === "PIEDRA") {
-        return console.log("Jugador 1 ha ganado")
-    } else if(jugada1 === "TIJERA" && jugada2 === "PIEDRA") {
-        return console.log("Jugador 2 ha ganado")
-    }  else if(jugada1 === "TIJERA" && jugada2 === "PAPEL") {
-        return console.log("Jugador 1 ha ganado")
+        console.log("Empate")
+    } else if(jugada1 === "PIEDRA" && jugada2 === "PAPEL" || jugada1 === "PAPEL" && jugada2 === "TIJERAS" || jugada1 === "TIJERAS" && jugada2 === "PIEDRA") {
+        console.log("Jugador 2 ha ganado")
+    } else if(jugada1 === "PIEDRA" && jugada2 === "TIJERAS" || jugada1 === "PAPEL" && jugada2 === "PIEDRA" || jugada1 === "TIJERAS" && jugada2 === "PAPEL") {
+        console.log("Jugador 1 ha ganado")
     } else {
-        return console.log("Un jugador ha hecho trampa")
+        console.log("Un jugador ha hecho trampa")
     }
 }
-//piedraPapelTijeras()
+piedraPapelTijeras()
 
 // 11
 //let colorIngresado = prompt("Ingresa un color con el siguiente formato: Negro");
