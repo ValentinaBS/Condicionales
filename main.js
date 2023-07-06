@@ -96,10 +96,10 @@ function puedeConducir(nombre, edad, altura, vision) {
 //let tipoPase = prompt("Ingrese su tipo de pase (vip o normal)")
 //let tieneEntrada = prompt("¿Cuenta con una entrada? Responda con 'si' o 'no'")
 
-function entradaPermitida(nombre, pase, poseeEntrada) {
-    if(nombre === "Valentina" || pase === "vip") {
+function entradaPermitida() {
+    if(nombreEntrada === "Valentina" || tipoPase === "vip") {
         console.log("Bienvenido/a")
-    } else if(poseeEntrada === "si") {
+    } else if(tieneEntrada === "si") {
         let respuesta = prompt("¿Desea utilizar su entrada? Responda con 'si' o 'no'")
         if(respuesta === "si") {
             console.log("Bienvenido/a")
@@ -118,7 +118,7 @@ function entradaPermitida(nombre, pase, poseeEntrada) {
         }
     }
 }
-//entradaPermitida(nombreEntrada, tipoPase, tieneEntrada)
+//entradaPermitida()
 
 // 8
 //let numeroIngresado1 = Number(prompt("Ingresa un número del 1 al 10"));
@@ -246,7 +246,7 @@ switch (colorIngresado) {
         console.log("Excelente elección, no lo teniamos pensado")
 }
 
-// 13
+// 12
 //let valorNumerico1 = Number(prompt("Ingresa un número a operar"));
 //let valorNumerico2 = Number(prompt("Ingresa otro número a operar"));
 //let operacion = prompt("Ingresa la operación usando: +, -, /, *");
@@ -269,7 +269,7 @@ function operarDosNumeros() {
 }
 //operarDosNumeros()
 
-// 14
+// 13
 //let nombreDni = prompt("Ingresa tu nombre tal cual aparece en tu DNI");
 //let numeroDni = prompt("Ingresa tu número de DNI");
 //let generoDni = prompt("Ingresa tu género tal cual aparece en tu DNI");
